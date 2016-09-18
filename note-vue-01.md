@@ -2,9 +2,9 @@
 ## 引入 Vue.js
 
 ### 起因
-- jQuery 的DOM操作与异步回调有天生的冲突
-- Vue.js 的MVVM设计模式十分易于前后端分离——只需要后端提供接口
-- Vue.js min + gzip后大小只有22kb，十分易于部署
+- jQuery 的DOM操作与异步回调有天生的冲突
+- Vue.js 的MVVM设计模式十分易于前后端分离——只需要后端提供接口
+- Vue.js min + gzip后大小只有22kb，十分易于部署
 
 ### 环境搭建
 
