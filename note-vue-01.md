@@ -68,6 +68,7 @@ var app3 = new Vue({
 ```
 
 > <div id="app-3">   <p v-if="seen">Now you really see me</p> </div>
+
 ##### 列表循环
 ```html
 <div id="app-4">
