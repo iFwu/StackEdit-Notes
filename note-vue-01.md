@@ -53,7 +53,7 @@ var app2 = new Vue({
 > <div id="app-2"><span v-bind:id="id">Inspect me</span></div>
 
 同文本插入一样，绑定元素的`id`可以被看做Vue实例中的`id`
-#### 条件和循环 *Conditionals and Loops *
+#### 条件和循环 *Conditionals and Loops*
 ##### 切换元素显示
 ```html
 <div id="app-3">
