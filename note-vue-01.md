@@ -146,5 +146,6 @@ var app6 = new Vue({
 > </div>
 
 ![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-00%3A59%3A45.jpg)
+
 #### Composing with Components *构建组件* 
 ![组件树🌲](http://vuefe.cn/images/components.png)
