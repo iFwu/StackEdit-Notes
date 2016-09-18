@@ -148,4 +148,21 @@ var app6 = new Vue({
 ![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-00%3A59%3A45.jpg)
 
 #### Composing with Components *构建组件* 
-![组件树🌲](http://vuefe.cn/images/components.png)
+![组件树🌲](https://rc.vuejs.org/images/components.png)
+
+* 组件就是预定义选项的Vue实例
+* 使用 `prop` 来让组件的数据从父组件传递到子组件：
+```js
+Vue.component('todo', {
+  props: ['todo'],
+  template: '<li>{{ todo.text }}</li>'
+})
+```
+使用 `v-bind` 绑定组件的数据
+```html
+<div id="app-7">
+  <ol>
+    <todo v-for="todo in todos" v-bind:todo="todo"></todo>
+  </ol>
+</div>
+```
