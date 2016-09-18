@@ -15,7 +15,7 @@
 
 ### 学习
 #### 声明式渲染 *Declarative Rendering*
-##### **Text Interpolation *文本插入* **
+##### **文本插入** *Text Interpolation*
 ```html
 <div id="app">
   {{ message }}
@@ -36,7 +36,7 @@ var app = new Vue({
 
  DOM会自动响应数据变化，修改 `app.message` 可看到实例的更新
 
-##### **Directive Bind *指令绑定* **
+##### **指令绑定** *Directive Bind*
 ```html
 <div id="app-2">
   <span v-bind:id="id">Inspect me</span>
@@ -147,7 +147,7 @@ var app6 = new Vue({
 
 ![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-00%3A59%3A45.jpg)
 
-#### Composing with Components *构建组件* 
+#### 构建组件 *Composing with Components* 
 ![组件树🌲](https://rc.vuejs.org/images/components.png)
 
 * 组件就是预定义选项的Vue实例
@@ -175,3 +175,4 @@ Vue.component('todo', {
 >     <todo v-for="ok in todos" v-bind:todo="ok"></todo>   </ol> </div>
 
 ![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-01%3A10%3A33.jpg)
+
