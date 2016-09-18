@@ -166,3 +166,8 @@ Vue.component('todo', {
   </ol>
 </div>
 ```
+
+> <div id="app-7">   <ol>
+>     <todo v-for="todo in todos" v-bind:todo="todo"></todo>   </ol> </div>
+
+![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-01%3A10%3A33.jpg)
