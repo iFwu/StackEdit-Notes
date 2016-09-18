@@ -14,7 +14,7 @@
 使用stackedit.io、browsersync和腾讯云搭建了Vue.js笔记系统
 
 ### 学习
-#### 声明式渲染
+#### 声明式渲染 *Declarative Rendering*
 ##### **Text Interpolation *文本插入* **
 ```html
 <div id="app">
@@ -32,8 +32,10 @@ var app = new Vue({
 ```
 > <div id="app"> {{ message }} </div>
 
+![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-00%3A57%3A51.jpg)
+
  DOM会自动响应数据变化，修改 `app.message` 可看到实例的更新
- 
+
 ##### **Directive Bind *指令绑定* **
 ```html
 <div id="app-2">
@@ -51,7 +53,7 @@ var app2 = new Vue({
 > <div id="app-2"><span v-bind:id="id">Inspect me</span></div>
 
 同文本插入一样，绑定元素的`id`可以被看做Vue实例中的`id`
-#### **Conditionals and Loops *条件和循环* **
+#### 条件和循环 *Conditionals and Loops *
 ##### 切换元素显示
 ```html
 <div id="app-3">
@@ -96,6 +98,7 @@ var app4 = new Vue({
 >       {{ todo.text }}
 >     </li>   </ul> </div>
 
+![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-00%3A58%3A51.jpg)
 ##### 输入的处理
 ###### 按钮事件绑定
 ```html
@@ -122,6 +125,7 @@ var app5 = new Vue({
 > <div id="app-5">   <p>{{ message }}</p>
 > <button v-on:click="reverseMessage">Reverse Message</button> </div>
 
+![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-00%3A59%3A17.jpg)
 ###### 使用 `v-model` 指令让 input 与 app 的状态双向绑定
 ```html 
 <div id="app-6">
@@ -140,3 +144,7 @@ var app6 = new Vue({
 
 > <div id="app-6">   <p>{{ message }}</p>   <input v-model="message">
 > </div>
+
+![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-00%3A59%3A45.jpg)
+#### Composing with Components *构建组件* 
+![组件树🌲](http://vuefe.cn/images/components.png)
