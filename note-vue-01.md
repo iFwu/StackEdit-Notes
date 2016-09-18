@@ -151,7 +151,9 @@ var app6 = new Vue({
 ![组件树🌲](https://rc.vuejs.org/images/components.png)
 
 * 组件就是预定义选项的Vue实例
-* 使用 `prop` 来让组件的数据从父组件传递到子组件：
+* 使用 `prop` 来让组件的数据从父组件传递到子组件
+* 逻辑解耦，子组件逻辑不影响父组件
+##### 例子
 ```js
 Vue.component('todo', {
   props: ['todo'],
@@ -168,6 +170,6 @@ Vue.component('todo', {
 ```
 
 > <div id="app-7">   <ol>
->     <todo v-for="todo in todos" v-bind:todo="todo"></todo>   </ol> </div>
+>     <todo v-for="ok in todos" v-bind:todo="ok"></todo>   </ol> </div>
 
 ![](http://7xtesn.com1.z0.glb.clouddn.com/ipic/2016-09-19-01%3A10%3A33.jpg)
