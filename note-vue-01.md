@@ -156,6 +156,7 @@ var app6 = new Vue({
 ##### 例子
 ```js
 Vue.component('todo', {
+  //props指要从父组件继承的属性（组件内的名称）
   props: ['todo'],
   template: '<li>{{ todo.text }}</li>'
 })
@@ -164,7 +165,8 @@ Vue.component('todo', {
 ```html
 <div id="app-7">
   <ol>
-    <todo v-for="todo in todos" v-bind:todo="todo"></todo>
+    <!-- v-for、message等属性属于父组件，需要通过v-bind绑定到子组件中 -->
+    <todo v-for="ok in todos" v-bind:todo="ok"></todo>
   </ol>
 </div>
 ```
